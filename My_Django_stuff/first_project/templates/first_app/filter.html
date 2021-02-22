@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>django</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/mystyle.css" %}"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body class="body">
+
+
+
+    <div class="topnav">
+     <a class="active" href="#home"> وب موویز </a>
+     <a href="{% url 'first_app:index'%}"> خانه </a>
+     <a href="{% url 'first_app:filter'%}">فیلتر</a>
+     <button class="navbutton"><a href="#login"> ورود/ثبت نام </a></button>
+     <button class="navbutton"><a href="#buy"> خرید اشتراک </a></button>
+    </div>
+
+    <div class="filtr">
+
+      <form >
+      <input type="text" class="search" placeholder="جستجو" name="search">
+      <button type="submit" class="sb"><img src="{% static "images/search.png" %}" class="simg"></button>
+     </form>
+
+
+      <table class="lists">
+        <tr class="trlists">
+          <th class="thlists" colspan="2" >ژانر</th>
+          <th class="thlists">کشور سازنده</th>
+          <th class="thlists">مرتب سازی براساس</th>
+        </tr>
+        <tr>
+          <td class="tdlists">
+            <label class="container"> اجتماعی
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container"> اکشن
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container"> ایران
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container"> مرتبط ترین
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="tdlists">
+            <label class="container"> انیمیشن
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container"> تاریخی
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container"> آمریکا
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container"> تازه های وب موویز
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="tdlists">
+            <label class="container"> ترسناک
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container"> جنایی
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container">  هند
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container"> امتیاز IMDB
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="tdlists">
+            <label class="container"> خانوادگی
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container"> درام
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container"> کره جنوبی
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td class="tdlists">
+            <label class="container"> سال ساخت
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+
+      </table>
+
+
+    </div>
+
+    <div class="spacef"></div>
+    <div class="footer-con">
+      <div class="footer">
+        <table align="center" class="tfooter">
+          <tr>
+            <td class="td"><a href="#" class="tdhover"> درباره وب موویز </a></td>
+            <td class="td"><a href="#" class="tdhover"> تماس با ما </a></td>
+          </tr>
+          <tr>
+            <td class="td"><a href="#" class="tdhover"> اپلیکشن ها </a></td>
+            <td class="td"><a href="#" class="tdhover"> خرید اشتراک </a></td>
+          </tr>
+          <tr>
+            <td class="td"><a href="#" class="tdhover">سوالات متداول</a></td>
+            <td class="td"><a href="#" class="tdhover">قوانین و مقررات</a><td>
+          </tr>
+       </table>
+       <div class="social"><a class="sociala"><img src="{% static "images/insta1.png" %}" class="icon"></a>
+         <a class="sociala"><img src="{% static "images/Twitter.png" %}" class="icon"></a>
+         <a class="sociala"><img src="{% static "images/tele.png" %}" class="icon"></a></div>
+         <div class="endtext">
+           <p> طراحی شده توسط احسانه طالب </p>
+         </div>
+       </div>
+     </div>
+
+  </body>
+</html>

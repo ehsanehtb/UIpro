@@ -1,0 +1,567 @@
+.body{
+  background-color: #333;
+  margin: 0px;
+  font-family: 'Markazi Text', serif;
+  color: #ffffff;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+  font-family: 'Almarai', sans-serif;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #fcda05;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  font-family: 'Cairo', sans-serif;
+  color: #fcda05;
+  padding: 12px 16px;
+  font-size: 20px;
+}
+.navbutton{
+  float: left;
+  color: #f2f2f2;
+  background-color: #333;
+  border: none;
+  text-align: center;
+  padding: 1px 2px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Almarai', sans-serif;
+}
+
+.topnav .navbutton:hover {
+  color: #fcda05;
+}
+
+
+/* slides image */
+
+
+.imgslide {
+  vertical-align: middle;
+  width: 100%;
+  height: 550px ;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 0px;
+  margin-top: 30px;
+  padding-top:30px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  opacity: 0.5;
+  background-color: #b5b4b1;
+}
+
+/* Position the "next button" */
+.next {
+  left: 8%;
+}
+
+/* On hover */
+.prev:hover, .next:hover {
+color: #333;
+opacity: 1;
+}
+/* images text*/
+.topright {
+  position: absolute;
+  bottom: 40%;
+  right: 5%;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.topright a{
+  text-decoration: none;
+  color: #ffffff;
+}
+/* logo */
+.name {
+  position: absolute;
+  bottom: 55%;
+  right: 2%;
+  width: 300PX;
+  height: auto;
+}
+
+.infobutton{
+  font-family: 'Markazi Text', serif;
+  position: absolute;
+  bottom: 30%;
+  right: 5%;
+  background-color: #ffffff ;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 20px;
+  border: none;
+  text-align: center;
+}
+.infobutton a{
+  text-decoration: none;
+  color: black;
+}
+
+.mySlides .infobutton:hover {
+  background-color: #fcda05;
+}
+
+/* image gallery */
+h3{
+  text-align: right;
+  margin-top: 60px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+div.gallery {
+  margin-bottom: 20px;
+}
+
+.responsive:hover .image {
+  filter: brightness(30%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid #000000;
+  color: white;
+
+}
+
+
+div.gallery .image {
+
+  width: 100%;
+  height: 200px;
+  transition: .5s ease;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  position: relative;
+  padding: 0px 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.text {
+  text-align: right;
+  filter: brightness(200%);
+  color: white !important;
+  font-size: 20px;
+  padding: 16px 32px;
+  position: absolute;
+  bottom: 10%;
+  right: 1%;
+  opacity: 0;
+
+}
+
+.responsive:hover .text {
+  color: white;
+  opacity: 1;
+
+}
+
+/* bottom */
+.space {
+  height: 350px;
+}
+.spacef{
+  height: 600px;
+}
+.spacem{
+  height: 700px;
+}
+.footer-con{
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+.footer {
+  width: 100%;
+  left: 0px;
+  height: 300px;
+  bottom: 0px;
+  text-align: center;
+  background-color: #1a1a1a;
+  padding-top: 50px;
+}
+.tfooter{
+  position: absolute;
+  right: 200px;
+}
+.td {
+  text-align: center;
+  height: 40px;
+  width: 200px;
+  text-align: right;
+  color: white;
+}
+.tdhover:hover {
+  color: #fcda05;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+.icon {
+  width: 40px;
+  height: auto;
+}
+.social{
+  position: absolute;
+  bottom: 50px;
+  right: 200px;
+  height: 50px;
+  direction: rtl;
+}
+.sociala{
+  filter: contrast(0%);
+  padding: 4px;
+
+}
+.sociala:hover {
+  filter: none;
+  cursor: pointer;
+
+}
+.endtext{
+  position: absolute;
+  bottom: 5px;
+  right: 200px;
+  color: white;
+}
+
+/* /////////filter/////////// */
+
+
+/* search */
+
+.filtr{
+  position: relative;
+  padding: 18px;
+  margin-top: 8px;
+  font-size: 30px;
+  border: none;
+}
+
+.search{
+  position: absolute;
+  top: 120px;
+  right: 250px;
+  color: black;
+  direction: rtl;
+  font-size: 18px;
+  padding: 21px 350px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+}
+
+::placeholder {
+  font-size: 18px;
+}
+
+.sb {
+  position: absolute;
+  top: 120px;
+  right: 200px;
+  padding: 18px 16px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: white;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+}
+
+.simg{
+  width: 25px;
+  height: auto;
+}
+
+.sb:hover {
+  background: #ccc;
+}
+
+/* lists */
+
+
+.lists{
+  direction: rtl;
+  position: absolute;
+  top: 250px;
+  right: 200px;
+  width: 900px;
+}
+
+.thlists{
+  direction: rtl;
+  text-align: center;
+}
+.tdlists{
+  direction: ltr;
+}
+
+/* The container */
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -moz-user-select: none;
+  user-select: none;
+  direction: rtl;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  direction: rtl;
+  border-radius: 15%;
+  background-color: #eee;
+  margin-right: 20px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #fcda05;
+
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/*///////////////movie1////////////////*/
+.movie{
+  position: relative;
+}
+
+.imgmovie{
+  float: right;
+  vertical-align: middle;
+  width: 100%;
+  height: 650px;
+}
+
+.namem{
+  position: absolute;
+  top: 110px;
+  right: 50px;
+  width: 300PX;
+  height: auto;
+}
+
+.toprightm{
+  position: absolute;
+  top: 350px;
+  right: 50px;
+  color: #ffffff;
+}
+.toprightm a{
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+.play{
+  position: absolute;
+  top: 550px;
+  right: 50px;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 20px;
+  border: none;
+  text-align: center;
+  background-color: rgba(255,255,255, .2);
+  color: white;
+
+}
+
+.play:hover {
+  background-color: #fcda05;
+  color: black;
+}
+
+.download{
+  position: absolute;
+  top: 550px;
+  right: 220px;
+  background-color: rgba(255,255,255, .2);
+  color: white;
+  width: 40px;
+  height: auto;
+  border-radius: 8px;
+}
+.download:hover{
+  background-color: #fcda05;
+}
+.toprightp{
+  position: absolute;
+  top: 380px;
+  right: 40px;
+  color: #ffffff;
+
+}
+.toprightp p{
+  font-size: 18px;
+  float: right;
+  padding: 15px;
+  direction: rtl;
+}
+.detail{
+  position: absolute;
+  top: 440px;
+  right: 50px;
+  direction: rtl;
+}
+
+.movieinfo {
+  position: relative;
+  top: 650px;
+  right: 10px;
+  width: 100%;
+  height: 600px;
+  direction: rtl;
+}
+
+.h4{
+  position: absolute;
+  top:10px;
+  right: 20px;
+  font-size: 23px;
+  font-weight: bold;
+
+}
+
+.infotext{
+  position: absolute;
+  top:60px;
+  right: 20px;
+  left: 90px;
+  font-size: 18px;
+}
+
+.infotext1{
+  position: absolute;
+  top:160px;
+  right: 20px;
+  left: 90px;
+  font-size: 20px;
+}
+
+.imgh4{
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  font-size: 23px;
+  font-weight: bold;
+
+}
+
+.imginfo-con{
+  top: 10px;
+  padding: 0 6px;
+  float: left;
+  width: 200px;
+}
+
+.infogallery img {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.imginfo{
+  position: absolute;
+  top: 290px;
+  right: 20px;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>django</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/mystyle.css" %}"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body class="body">
+
+
+
+    <div class="topnav">
+     <a class="active" href="#home"> وب موویز </a>
+     <a href="{% url 'first_app:index'%}"> خانه </a>
+     <a href="{% url 'first_app:filter'%}">فیلتر</a>
+     <button class="navbutton"><a href="#login"> ورود/ثبت نام </a></button>
+     <button class="navbutton"><a href="#buy"> خرید اشتراک </a></button>
+    </div>
+
+
+    <div class="slideshow-container">
+
+      <div class="mySlides">
+        <img src="{% static "images/soul.jpeg" %}" class="imgslide" style="width:100%">
+        <a href="#soul"><img src="{% static "images/soul.png" %}" class="name" title=" انیمیشن روح "></a>
+        <div class="topright"><a href="#soul"> روح </a></div>
+        <button class="infobutton"><a href="{% url 'first_app:movie1'%}"> اطلاعات فیلم</a></button>
+      </div>
+
+      <div class="mySlides">
+        <img src="{% static "images/wwy.jpg" %}" class="imgslide" style="width:100%">
+        <a href="#wwy"><img src="{% static "images/wwy.png" %}" class="name" title=" دختر آب و هوا "></a>
+        <div class="topright"><a href="#wwy"> دختر آب وهوا </a></div>
+        <button class="infobutton"><a href="#info"> اطلاعات فیلم</a></button>
+      </div>
+
+      <div class="mySlides">
+        <img src="{% static "images/yoda.jpg" %}" class="imgslide" style="width:100%">
+        <a href="#mando"><img src="{% static "images/mando1.png" %}" class="name" title=" سریال مندلورین "></a>
+        <div class="topright"><a href="#mand">مندلورین  </a></div>
+        <button class="infobutton"><a href="#info"> اطلاعات فیلم</a></button>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+      <script type="text/javascript" src="{% static "javascript/javascript.js" %}"></script>
+
+   <!-- image gallery -->
+
+      <h3> ویژه </h3>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img class="image" src="{% static "images/aot1.jpg" %}"  width="600" height="400">
+            <div class="text">8.9: IMDB<br>سریال حمله به تایتان <br>۲۰۱۳-انیمیشن-اکشن-ماجراجویی</div>
+         </a>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img class="image" src="{% static "images/mando1.jpg" %}"  width="600" height="400">
+            <div class="text">8.8: IMDB<br>سریال مندلورین<br>۲۰۱۹-اکشن-ماجراجویی-علمی تخیلی</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img class="image" src="{% static "images/toy1.jpg" %}"  width="600" height="400">
+            <div class="text">7.8: IMDB<br>داستان اسباب بازی های ۴<br>۲۰۱۹-انیمیشن-ماجراجویی-کمدی</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img class="image" src="{% static "images/joker1.jpg" %}" width="600" height="400">
+            <div class="text">8.4: IMDB<br>جوکر<br>۲۰۱۹-جنایی-هیجان انگیز-درام</div>
+          </a>
+        </div>
+      </div>
+
+      <h3>تازه های وب موویز</h3>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img class="image" src="{% static "images/st.jpg" %}"  width="600" height="400">
+            <div class="text">8.7: IMDB<br>سریال چیزهای عجیبی<br>۲۰۱۶-درام-فانتزی-ترسناک</div>
+         </a>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img class="image" src="{% static "images/tdat.jpg" %}"  width="600" height="400">
+            <div class="text">7.1: IMDB<br>شیطان تمام وقت<br>۲۰۲۰-جنایی-درام-هیجان انگیز</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img class="image" src="{% static "images/tlt.jpeg" %}"  width="600" height="400">
+            <div class="text">6.3: IMDB<br>چیزهای کوچک<br>۲۰۲۱-جنایی-درام-هیجان انگیز</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img class="image" src="{% static "images/mdb.jpg" %}" alt="Mountains" width="600" height="400">
+            <div class="text">8.1: IMDB<br>دختر میلیون دلاری<br>۲۰۰۴-درام-ورزشی</div>
+          </a>
+        </div>
+      </div>
+
+  <!--    <div class="clearfix"></div>  -->
+      <div class="space"></div>
+      <div class="footer-con">
+        <div class="footer">
+          <table align="center" class="tfooter">
+            <tr>
+              <td class="td"><a href="#" class="tdhover"> درباره وب موویز </a></td>
+              <td class="td"><a href="#" class="tdhover"> تماس با ما </a></td>
+            </tr>
+            <tr>
+              <td class="td"><a href="#" class="tdhover"> اپلیکشن ها </a></td>
+              <td class="td"><a href="#" class="tdhover"> خرید اشتراک </a></td>
+            </tr>
+            <tr>
+              <td class="td"><a href="#" class="tdhover">سوالات متداول</a></td>
+              <td class="td"><a href="#" class="tdhover">قوانین و مقررات</a><td>
+            </tr>
+         </table>
+         <div class="social"><a class="sociala"><img src="{% static "images/insta1.png" %}" class="icon"></a>
+           <a class="sociala"><img src="{% static "images/Twitter.png" %}" class="icon"></a>
+           <a class="sociala"><img src="{% static "images/tele.png" %}" class="icon"></a></div>
+           <div class="endtext">
+             <p> طراحی شده توسط احسانه طالب </p>
+           </div>
+         </div>
+       </div>
+  </body>
+</html>

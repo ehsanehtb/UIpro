@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>django</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mystyle.css'%}"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body class="body">
+
+
+
+    <div class="topnav">
+     <a class="active" href="#home"> وب موویز </a>
+     <a href="{% url 'first_app:index'%}"> خانه </a>
+     <a href="{% url 'first_app:filter'%}">فیلتر</a>
+     <button class="navbutton"><a href="#login"> ورود/ثبت نام </a></button>
+     <button class="navbutton"><a href="#buy"> خرید اشتراک </a></button>
+    </div>
+
+
+    <div class="movie">
+      <img src="{% static 'images/soul1.jpg' %}" class="imgmovie" >
+      <a href="#soul"><img src="{% static 'images/soul.png' %}" class="namem" title=" انیمیشن روح "></a>
+      <div class="toprightm"><a href="#soul"> روح </a><br></div>
+      <div class="toprightp"><p> ۲۰۲۰ </p><p> ۱۲۷ دقیقه </p><p> IMDB 8.1 </p></div>
+      <div class="detail">جو معلم موسیقی در یک مدرسه است. او از زندگی و کار خود ناراضی است و تصمیم می گیرد<br>به یک گروه موسیقی جاز بپیوندد، اما به طور ناگهانی روح او از بدنش جدا شده و با اتفاقاتی<br>غیرمنتظره روبرو می شود و...</div>
+      <a href="#" class="aplay"><button class="play"> ورود و پخش فیلم </button></a>
+      <a href="#" class="adownload"><img src="{% static 'images/download.png'%}" class="download"></a>
+    </div>
+
+    <div class="movieinfo">
+        <h4 class="h4">درباره فیلم روح</h4>
+        <p class="infotext">فیلم روح، فیلمی انیمیشن، ماجراجویی، کمدی، خانوادگی، فانتزی و موزیکال، محصول سال ۲۰۲۰ کشور آمریکا به کارگردانی پیتر داکتر و کمپ پاورز است. نویسندگی فیلم روح توسط پیت داکتر و مایک جونز انجام شده است. بازیگرانی چون جیمی فاکس، تینا فی، گراهام نورتون، ریچل هاوس، آلیس براگا، ریچارد آیود، فیلیسیا رشاد و دانل راولینگز در فیلم روح به ایفای نقش پرداخته اند.<br>
+      فیلم روح توسط استودیوی انیمیشن پیکسار تولید شده و پخش آن توسط شرکت والت دیزنی صورت گرفته است. انیمیشن روح اندکی پس از اکران عمومی واکنش های مثبت گسترده ای از سوی مخاطبان در سراسر جهان دریافت کرد و در میان دویست و پنجاه فیلم برتر در طول تاریخ از سوی سایت آی ام دی بی قرار گرفت.</p><br>
+        <p class="infotext1">دسته بندی: کمدی ، انیمیشن ، فانتزی ، ماجراجویی</p>
+        <h4 class="imgh4">تصاویر</h4>
+        <div class="imginfo">
+          <div class="imginfo-con">
+            <div class="infogallery">
+              <a target="_blank" href="{% static 'images/soul3.jpg'%}" >
+                <img src="{% static 'images/soul3.jpg'%}" alt="روح۱" width="600" height="400">
+              </a>
+            </div>
+          </div>
+
+
+          <div class="imginfo-con">
+            <div class="infogallery">
+              <a target="_blank" href="{% static 'images/soul2.jpg'%}">
+                <img src="{% static 'images/soul2.jpg'%}" alt="روح۲" width="600" height="400">
+              </a>
+            </div>
+          </div>
+
+          <div class="imginfo-con">
+            <div class="infogallery">
+              <a target="_blank" href="{% static 'images/soul5.jpg'%}">
+                <img src="{% static 'images/soul5.jpg'%}" alt="روح۳" width="600" height="400">
+              </a>
+            </div>
+          </div>
+
+          <div class="imginfo-con">
+            <div class="infogallery">
+              <a target="_blank" href="{% static 'images/soul4.jpg'%}">
+                <img src="{% static 'images/soul4.jpg'%}" alt="روح۴" width="600" height="400">
+              </a>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <div class="spacem"></div>
+    <div class="footer-con">
+      <div class="footer">
+        <table align="center" class="tfooter">
+          <tr>
+            <td class="td"><a href="#" class="tdhover"> درباره وب موویز </a></td>
+            <td class="td"><a href="#" class="tdhover"> تماس با ما </a></td>
+          </tr>
+          <tr>
+            <td class="td"><a href="#" class="tdhover"> اپلیکشن ها </a></td>
+            <td class="td"><a href="#" class="tdhover"> خرید اشتراک </a></td>
+          </tr>
+          <tr>
+            <td class="td"><a href="#" class="tdhover">سوالات متداول</a></td>
+            <td class="td"><a href="#" class="tdhover">قوانین و مقررات</a><td>
+          </tr>
+       </table>
+       <div class="social"><a class="sociala"><img src="{% static "images/insta1.png" %}" class="icon"></a>
+         <a class="sociala"><img src="{% static "images/Twitter.png" %}" class="icon"></a>
+         <a class="sociala"><img src="{% static "images/tele.png" %}" class="icon"></a></div>
+         <div class="endtext">
+           <p> طراحی شده توسط احسانه طالب </p>
+         </div>
+       </div>
+     </div>
+
+  </body>
