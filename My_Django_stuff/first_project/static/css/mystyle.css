@@ -565,3 +565,11 @@ div.desc {
   top: 290px;
   right: 20px;
 }
+
+.video{
+  position: fixed;
+  right: 130px;
+  bottom: 10px;
+  width: 80%;
+  height: 100%;
+}
