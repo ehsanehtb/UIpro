@@ -11,3 +11,6 @@ def filter(request):
 
 def movie1(request):
     return render(request,'first_app/movie1.html')
+
+def play(request):
+    return render(request,'first_app/play.html')
