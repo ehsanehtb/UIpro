@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>django</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/mystyle.css" %}"/>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body class="body">
+    <video controls class="video">
+      <source src="{% static 'images/soul.mp4'%}" type='video/mp4'>
+        Your browser does not support HTML video.
+      </video>
+  </body>
+  </html>
